@@ -5,7 +5,13 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-
+/**
+ * @ClassName: Test.Test7.java
+ * @Description:
+ * @author: zhongbo
+ * @date:  2019-07-31 17:37
+ * @version V1.0
+ */
 public class Test7 {
     public static void main(String[] args) {
         List<Person> person = Arrays.asList(
