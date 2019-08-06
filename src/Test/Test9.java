@@ -16,9 +16,7 @@ public class Test9 {
         int i = (instance.get(Calendar.MONTH))+1;
         System.out.println("i = " + i);
         System.out.println("instance.get(Calendar.YEAR) = " + instance.get(Calendar.YEAR));
-        /***
-         * adffffffffffffffffffffffffffffffffffffffffff
-         */
+
 
         /**
          * wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
