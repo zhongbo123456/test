@@ -6,7 +6,5 @@ public class Test10 {
         int i = ftpFile.lastIndexOf("/");
         System.out.println("i = " + i);
         System.out.println("ftpFile.substring(42) = " + ftpFile.substring(ftpFile.lastIndexOf("/")+1));
-/*lajdflasjdfljasdlfjlsadjflsadfas*/
-
     }
 }
