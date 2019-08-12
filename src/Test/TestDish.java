@@ -123,15 +123,26 @@ public class TestDish {
         /*List<Dish> collect = menu.stream().filter(dish -> dish.isVegetarian() == false).limit(2).collect(Collectors.toList());
         System.out.println("collect = " + collect);*/
         /**
+         * flatMap()使用
+         *  flatMap与map的区别在于 flatMap是将一个流中的每个值都转成一个个流，然后再将这些流扁平化成为一个流
+         */
+
+        List<String> list = Arrays.asList("好,好,学", "习,天,天", "向,上");
+        List<String[]> collect = list.stream().map(str -> str.split(",")).collect(Collectors.toList());
+        System.out.println("collect = " + collect);
+        List<String> collect1 = list.stream().map(str -> str.split(",")).flatMap(Arrays::stream).collect(Collectors.toList());
+        System.out.println("collect1 = " + collect1);
+
+        /**
          * flatMap()使用，返回数对
          */
-        List<Integer> number1 = Arrays.asList(1, 2, 3);
+       /* List<Integer> number1 = Arrays.asList(1, 2, 3);
         List<Integer> number2 = Arrays.asList(3, 4);
         List<int[]> collect = number1.stream().flatMap(
                 i -> number2.stream()
                         .map(j -> new int[]{i, j})
         ).collect(Collectors.toList());
-        System.out.println("collect = " + collect);
+        System.out.println("collect = " + collect);*/
         /**
          * 返回总和被3整除的数对
          */
